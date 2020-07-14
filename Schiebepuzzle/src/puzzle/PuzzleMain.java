@@ -8,7 +8,7 @@ import java.awt.event.MouseListener;
 
 import javax.swing.*;
 
-public class Klausurmain extends JFrame
+public class PuzzleMain extends JFrame
 {
 	JPanel inhalt;	
 	JPanel oben;
@@ -16,7 +16,7 @@ public class Klausurmain extends JFrame
 	int anzahlZuege;
 	Mitte mitte;
 	
-	public Klausurmain()
+	public PuzzleMain()
 	{
 		super("Schiebepuzzle");
 		
@@ -89,7 +89,7 @@ public class Klausurmain extends JFrame
 		public void actionPerformed(ActionEvent e ) 
 		{
 			//JButton source = (JButton)e.getSource();
-			Klausurmain.this.neustart();
+			PuzzleMain.this.neustart();
 		}
 	}
 	
@@ -264,7 +264,7 @@ public class Klausurmain extends JFrame
 			//System.out.println("seitIndex: " + seitIndex + "   hoeheIndex: " + hoeheIndex);
 			
 			// panel [hoeheIndex][seitIndex]
-			Klausurmain.this.tausche(hoeheIndex, seitIndex);
+			PuzzleMain.this.tausche(hoeheIndex, seitIndex);
 			
 		}
 
@@ -295,7 +295,7 @@ public class Klausurmain extends JFrame
 	
 	public static void main(String[] args) 
 	{
-		new Klausurmain();
+		new PuzzleMain();
 	}
 
 }
